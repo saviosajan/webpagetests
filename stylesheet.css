@@ -1,5 +1,85 @@
 h1 {
-  color: limegreen;
+  background-color: blue;
+  color: white;
   margin-left: 20px;
   font-family: helvetica;
+}
+
+body{
+  background-color: cyan;
+}
+
+.b1 {
+  transition-duration: 0.4s;
+  background-color: red;
+  border: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 16px;
+}
+
+.b1:hover {
+  background-color: red;
+  border: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 16px;
+}
+
+.b2 {
+  transition-duration: 0.4s;
+  background-color: teal;
+  border: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.b2:hover {
+  background-color: black;
+  border: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.b3 {
+  transition-duration: 0.4s;
+  background-color: limegreen;
+  border: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.b3:hover {
+  background-color: limegreen;
+  border: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 100px;
 }
