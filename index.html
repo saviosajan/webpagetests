@@ -18,6 +18,18 @@
   mtom.src="mtom.mp3";
   var stom = new Audio();
   stom.src="stom.mp3";
+  var s1 = new Audio();
+  s1.src="1.mp3";
+  var s2 = new Audio();
+  s2.src="2.mp3";
+  var s3 = new Audio();
+  s3.src="3.mp3";
+  var s4 = new Audio();
+  s4.src="4.mp3";
+  var s5 = new Audio();
+  s5.src="5.mp3";
+  var ss = new Audio();
+  ss.src="1212213435.mp3"
 </script>
 
   <head >
@@ -30,6 +42,7 @@
   <body>
     <h1>Helo gais, press some keys...</h1>
     <script>
+      var f=0;
       window.addEventListener("keydown", function(event) {
         if (event.defaultPrevented) {
           return;
@@ -50,7 +63,48 @@
             hihat.play();
         } else if (event.code === "KeyV"){
             snare.play();
-        }
+        } else if (event.code === "Digit1"){
+            s1.play();
+            if (f==0 || f==2 || f==5) {
+              f+=1;
+            }
+            else {
+              f=0;
+            }
+        } else if (event.code === "Digit2"){
+            s2.play();
+            if (f==1 || f==3 || f==4) {
+              f+=1;
+            }
+            else {
+              f=0;
+            }
+        } else if (event.code === "Digit3"){
+            s3.play();
+            if (f==6 || f==8) {
+              f+=1;
+            }
+            else {
+              f=0;
+            }
+        } else if (event.code === "Digit4"){
+            s4.play();
+            if (f==7) {
+              f+=1;
+            }
+            else {
+              f=0;
+            }
+        } else if (event.code === "Digit5"){
+            s5.play();
+            if (f==9) {
+              ss.play();
+              f=0;
+            }
+            else {
+              f=0;
+            }
+        } 
         refreshPosition();
         event.preventDefault();
       }, true);
