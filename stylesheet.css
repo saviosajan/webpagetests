@@ -6,7 +6,8 @@ h1 {
 }
 
 body{
-  background-color: cyan;
+  background-image: url("backg.jpeg");
+  background-color: black;
 }
 
 .b1 {
