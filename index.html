@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html>
+
+<script>
+  var crash = new Audio();
+  crash.src="csh.mp3";
+  var snare = new Audio();
+  snare.src="snar.mp3";
+  var ride = new Audio();
+  ride.src="ride.mp3";
+  var hihat = new Audio();
+  hihat.src="hh.mp3";
+  var bass = new Audio();
+  bass.src="bdrum.mp3";
+  var ftom = new Audio();
+  ftom.src="ftom.mp3";
+  var mtom = new Audio();
+  mtom.src="mtom.mp3";
+  var stom = new Audio();
+  stom.src="stom.mp3";
+</script>
+
   <head >
     <meta charset="utf-8">
     <meta name="description" content="Now this is sick">
@@ -8,22 +28,57 @@
     <link rel = "stylesheet" type = "text/css" href = "stylesheet.css" />
   </head>
   <body>
-    <h1>HELO</h1>
-    <button data-modal-target="#modal">Open something</button>
+    <h1>Helo gais, press some keys...</h1>
+    <script>
+      window.addEventListener("keydown", function(event) {
+        if (event.defaultPrevented) {
+          return;
+        }
+        if (event.code === "Space"){
+            bass.play();
+        } else if (event.code === "KeyF"){
+            stom.play();
+        } else if (event.code === "KeyH"){
+            mtom.play();
+        } else if (event.code === "KeyM"){
+            ftom.play();
+        } else if (event.code === "KeyI"){
+            ride.play();
+        } else if (event.code === "KeyE"){
+            crash.play();
+        } else if (event.code === "KeyS"){
+            hihat.play();
+        } else if (event.code === "KeyV"){
+            snare.play();
+        }
+        refreshPosition();
+        event.preventDefault();
+      }, true);
+    </script>
+    <button class="drums" data-modal-target="#modal" onclick="ss4()">Hmm whats this...?</button>
     <div class="modal" id="modal">
       <div class="modal-header">
-        <div class="title">Something hmm</div>
+        <div class="title">Nothing here hmm...</div>
         <button data-close-button class="close-button">&times;</button>
       </div>
       <div class="modal-body">
-        helo gais
+        <!--button class="snare" onclick="snare.play()">snare</button>
+        <button class="crash" onclick="crash.play()">crash</button>
+        <button class="ride" onclick="ride.play()">ride</button>
+        <button class="hihat" onclick="hihat.play()">hihat</button>
+        <button class="bass" onclick="bass.play()">bass</button>
+        <button class="ftom" onclick="ftom.play()">ftom</button>
+        <button class="mtom" onclick="mtom.play()">mtom</button>
+        <button class="stom" onclick="stom.play()">stom</button-->
+          <!--img id="d" src="drums.jpg" height="300" width="450" alt="hmm"-->
+          Just emptiness...
       </div>
     </div>
     <div id="overlay"></div>
-    <!--img id="s1" src="sa1.png" height="500" width="800" alt="just a meme"-->
-    <!--button class="b1" onclick="ss1()">HOVER1</button-->
-    <!--img id="s2" src="sa2.png" height="500" width="800" alt="just a meme"-->
-    <!--button class="b2" onclick="ss2()">HOVER2</button-->
+    <!--img id="s1" src="sa1.png" height="500" width="800" alt="just a meme">
+    <button class="b1" onclick="ss1()">HOVER1</button>
+    <img id="s2" src="sa2.png" height="500" width="800" alt="just a meme">
+    <button class="b2" onclick="ss2()">HOVER2</button-->
     <!--img  src="sa3.png" height="500" width="800" id="s3" alt="just a meme"-->
     <a href="https://www.google.com/" target="_blank"><button class="b1" onclick="ss1()">Google karo</button></a>
     <a href="https://www.pokernow.club/" target="_blank"><button class="b2" onclick="ss2()">Poker khelo</button></a>
