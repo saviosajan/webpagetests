@@ -45,7 +45,7 @@
       var f=0;
       window.addEventListener("keydown", function(event) {
         if (event.defaultPrevented) {
-          
+          return;
         }
         if (event.code === "Space"){
             bass.play();
@@ -98,13 +98,8 @@
         } else if (event.code === "Digit5"){
             s5.play();
             if (f>=9) {
-              if (f<100) {
-                f+=1;
-              }
-              else {
-                ss.play();
-                f=0;
-              }
+              ss.play();
+              f=0;
             }
             else {
               f=0;
